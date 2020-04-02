@@ -38,9 +38,11 @@ end
 #select author names
 #select series subgenres
 def select_name_and_series_subgenres_of_authors
-  "SELECT authors.name, subgeneres.id
+  "SELECT authors.name, series.subgeneres_id
     FROM authors
-    GROUP BY author.name "
+    JOIN 
+    GROUP BY author.name
+    "
 end
 
 def select_series_title_with_most_human_characters
