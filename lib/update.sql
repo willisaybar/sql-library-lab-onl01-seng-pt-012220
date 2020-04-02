@@ -1,5 +1,3 @@
-UPDATE species
-FROM characters
+UPDATE characters.species
 SET species = 'Martian'
 WHERE characters.id = 8;
-FROM characters
