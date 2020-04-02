@@ -1,4 +1,4 @@
 UPDATE species
-FROM characters
+-- FROM characters
 SET species = 'Martian'
 WHERE characters.id = 8;
