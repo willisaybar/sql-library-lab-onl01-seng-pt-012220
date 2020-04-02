@@ -13,11 +13,12 @@
 #in first series
 #order by year
 def select_books_titles_and_years_in_first_series_order_by_year
-  "SELECT books.titles, books.year
+  "SELECT books.title, books.year
     FROM books
     LEFT OUTER JOIN series
     ON series.id = books.series_id
-    ORDER BY year "
+    WHERE series.id = 1
+    ORDER BY year"
 end
 
 # SELECT Projects.title, SUM(pledges.amount) - projects.funding_goal
