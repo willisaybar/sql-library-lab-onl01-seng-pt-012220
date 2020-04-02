@@ -1,6 +1,27 @@
+# SELECT
+# FROM
+# JOIN
+#   ON
+# WHERE
+# GROUP BY
+# HAVING
+# ORDER BY
+# LIMIT
+
+#select book titles
+#select years
+#in first series
+#order by year
 def select_books_titles_and_years_in_first_series_order_by_year
-  "Write your SQL query here"
+  "SELECT books.titles, "
 end
+
+# SELECT Projects.title, SUM(pledges.amount) - projects.funding_goal
+#       FROM projects
+#       JOIN pledges
+#       ON projects.id = pledges.project_id
+#       GROUP BY projects.title
+#       HAVING SUM(pledges.amount) >= projects.funding_goal
 
 def select_name_and_motto_of_char_with_longest_motto
   "Write your SQL query here"
