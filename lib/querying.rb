@@ -40,7 +40,8 @@ end
 def select_name_and_series_subgenres_of_authors
   "SELECT authors.name, series.subgeneres_id
     FROM authors
-    JOIN 
+    JOIN series
+    ON series.subgenre_id = author.id
     GROUP BY author.name
     "
 end
